@@ -9,14 +9,16 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="h-screen flex flex-col bg-neutral-300 font-montserrat">
+    <div className="min-h-screen flex flex-col gap-10 bg-neutral-300 font-montserrat">
       <Header />
-      <Routes>
-        <Route path="/" exact element={<Main />} />
-        <Route path="/encomendas" exact element={<Encomendas />} />
-        <Route path="/produtos" exact element={<Produtos />} />
-        <Route path="/localizacao" exact element={<Localizacao />} />
-      </Routes>
+      <div className="px-2">
+        <Routes>
+          <Route path="/" exact element={<Main />} />
+          <Route path="/encomendas" exact element={<Encomendas />} />
+          <Route path="/produtos" exact element={<Produtos />} />
+          <Route path="/localizacao" exact element={<Localizacao />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
