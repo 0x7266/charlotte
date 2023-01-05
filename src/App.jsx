@@ -1,25 +1,28 @@
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header";
-import Main from "./components/Main";
-import Produtos from "./pages/Produtos";
-import Localizacao from "./pages/Localização";
-import Encomendas from "./pages/Encomendas";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Products from "./components/Products";
+import Encomendas from "./components/Encomendas";
+import Localizacao from "./components/Localizacao";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col gap-10 bg-neutral-300 font-montserrat">
+    <div className="flex flex-col bg-neutral-300 font-montserrat min-h-screen relative">
       <Header />
-      <div className="px-2">
+      <div className="main h-[80vh] sm:h-[82vh] flex justify-center sm:px-10">
         <Routes>
-          <Route path="/" exact element={<Main />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/produtos" exact element={<Products />} />
           <Route path="/encomendas" exact element={<Encomendas />} />
-          <Route path="/produtos" exact element={<Produtos />} />
           <Route path="/localizacao" exact element={<Localizacao />} />
         </Routes>
       </div>
-      <Footer />
+      <div className="h-[8vh]">
+        <Footer />
+      </div>
     </div>
   );
 }
