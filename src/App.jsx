@@ -1,18 +1,24 @@
 import { useState } from "react";
-
+import { Route, Routes } from "react-router-dom";
+import { motion } from "framer-motion";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Products from "./components/Products";
-import Encomendas from "./components/Encomendas";
-import Localizacao from "./components/Localizacao";
-import { Route, Routes } from "react-router-dom";
+import Products from "./pages/Products";
+import Encomendas from "./pages/Encomendas";
+import Localizacao from "./pages/Localizacao";
 
 function App() {
   return (
-    <div className="flex flex-col bg-neutral-300 font-montserrat min-h-screen relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, when: "beforeChildren" }}
+      viewport={{ once: true }}
+      className="flex flex-col bg-neutral-300 font-montserrat min-h-screen relative"
+    >
       <Header />
-      <div className="main h-[80vh] sm:h-[82vh] flex justify-center sm:px-10">
+      <div className="main min-h-[80vh] sm:h-[82vh] flex justify-center">
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/produtos" exact element={<Products />} />
@@ -23,7 +29,7 @@ function App() {
       <div className="h-[8vh]">
         <Footer />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
