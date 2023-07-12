@@ -8,9 +8,9 @@ import Local from "./pages/Local";
 
 function App() {
 	return (
-		<div className="flex flex-col bg-neutral-300 font-montserrat min-h-[100dvh] relative">
+		<div className="flex flex-col gap-10 items-center bg-neutral-300 font-montserrat min-h-[100dvh] relative">
 			<Header />
-			<div className="main flex justify-center flex-grow">
+			<div className="main flex justify-center flex-grow container">
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/produtos" element={<Products />} />

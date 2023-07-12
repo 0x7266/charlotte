@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { productsListVariant, productVariant } from "../variants/";
+import { productVariant } from "../variants/";
 import { IProduct } from "../data/products";
 
 interface Props {
@@ -17,12 +17,12 @@ export default function Product({ product, index }: Props) {
 			viewport={{ once: true, amount: 0.4 }}
 		>
 			<motion.div
-				className="flex flex-col gap-3 w-64 bg-chrltt p-3 rounded text-xl max-h-96 font-bold"
+				className="flex flex-col gap-3 w-64 bg-gradient-to-tr from-chrltt from-80% to-rose-500 p-3 rounded text-xl max-h-96 font-bold"
 				variants={productVariant(index)}
 			>
 				<img
 					// src={`https://production-darez-api.s3.amazonaws.com/products/1599053284028_IMAGE1599053283566.jpg`}
-					src={`assets/${product.id}.jpg`}
+					src={`/src/assets/${product.id}.jpg`}
 					className="w-full h-60 object-cover rounded"
 				/>
 				<span>{product.name}</span>

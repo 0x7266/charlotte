@@ -14,29 +14,31 @@ export default function Products() {
 	// }, [size]);
 
 	return (
-		<div className="flex flex-col items-center sm:items-start gap-5 py-2 px-5 sm:overflow-hidden flex-1">
-			<motion.h2
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-				className="text-5xl font-bold"
-			>
-				Produtos
-			</motion.h2>
-			<motion.div
-				// drag="x"
-				// dragConstraints={{ right: 0, left: -width }}
-				className=""
-			>
-				<div
-					ref={carousel}
-					className="flex flex-col items-center sm:items-stretch sm:flex-row gap-3"
+		<div className="container flex flex-col items-center">
+			<div className="flex flex-col items-center sm:items-start gap-5 py-2 px-5 sm:overflow-hidden flex-1">
+				<motion.h2
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1 }}
+					className="text-5xl font-bold"
 				>
-					{products.map((product, index) => (
-						<Product key={index} product={product} index={index} />
-					))}
-				</div>
-			</motion.div>
+					Produtos
+				</motion.h2>
+				<motion.div
+					// drag="x"
+					// dragConstraints={{ right: 0, left: -width }}
+					className=""
+				>
+					<div
+						ref={carousel}
+						className="flex flex-col items-center sm:items-stretch sm:flex-row gap-3"
+					>
+						{products.map((product, index) => (
+							<Product key={index} product={product} index={index} />
+						))}
+					</div>
+				</motion.div>
+			</div>
 		</div>
 	);
 }
