@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
-import product from "../variants/product";
+import productVariant from "../variants/product";
 import productsList from "../variants/productsList";
+import { IProduct } from "../data/products";
 
-export default function Product({ p, index }) {
+interface Props {
+	product: IProduct;
+	index: number;
+}
+
+export default function Product({ product, index }: Props) {
 	return (
 		<motion.div
 			className="flex flex-col items-center sm:items-stretch sm:flex-row gap-3"
@@ -13,14 +19,14 @@ export default function Product({ p, index }) {
 		>
 			<motion.div
 				className="flex flex-col gap-3 w-64 bg-chrltt p-3 rounded text-xl max-h-96 font-bold"
-				variants={product(index)}
+				variants={productVariant(index)}
 			>
 				<img
 					// src={`https://production-darez-api.s3.amazonaws.com/products/1599053284028_IMAGE1599053283566.jpg`}
-					src={`assets/${p.id}.jpg`}
+					src={`assets/${product.id}.jpg`}
 					className="w-full h-60 object-cover rounded"
 				/>
-				<span>{p.name}</span>
+				<span>{product.name}</span>
 			</motion.div>
 		</motion.div>
 	);

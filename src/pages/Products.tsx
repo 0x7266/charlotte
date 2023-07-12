@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
-import products from "../data/products";
+import { products } from "../data/products";
 import Product from "../components/Product";
 
 export default function Products() {
@@ -32,8 +32,8 @@ export default function Products() {
 					ref={carousel}
 					className="flex flex-col items-center sm:items-stretch sm:flex-row gap-3"
 				>
-					{products.map((p, index) => (
-						<Product key={index} p={p} index={index} />
+					{products.map((product, index) => (
+						<Product key={index} product={product} index={index} />
 					))}
 				</div>
 			</motion.div>

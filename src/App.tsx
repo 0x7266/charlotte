@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "./components/Header";
@@ -20,10 +19,10 @@ function App() {
 			<Header />
 			<div className="main flex justify-center flex-grow">
 				<Routes>
-					<Route path="/" exact element={<Home />} />
-					<Route path="/produtos" exact element={<Products />} />
-					<Route path="/encomendas" exact element={<Orders />} />
-					<Route path="/localizacao" exact element={<Local />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/produtos" element={<Products />} />
+					<Route path="/encomendas" element={<Orders />} />
+					<Route path="/localizacao" element={<Local />} />
 				</Routes>
 			</div>
 			<Footer />
