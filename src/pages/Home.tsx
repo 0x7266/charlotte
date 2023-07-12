@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import home from "../variants/home.js";
-import charlotte from "../variants/charlotte";
+import charlotte from "../variants/charlotte.js";
 
 export default function Home() {
 	return (
