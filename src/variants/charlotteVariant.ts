@@ -1,4 +1,4 @@
-const charlotte = {
+export const charlotteVariant = {
 	hidden: {
 		y: 80,
 		opacity: 0,
@@ -8,5 +8,3 @@ const charlotte = {
 		opacity: 1,
 	},
 };
-
-export default charlotte;

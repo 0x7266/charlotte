@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import productVariant from "../variants/product";
-import productsList from "../variants/productsList";
+import { productsListVariant, productVariant } from "../variants/";
 import { IProduct } from "../data/products";
 
 interface Props {

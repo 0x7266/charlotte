@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { motion } from "framer-motion";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
@@ -9,13 +8,7 @@ import Local from "./pages/Local";
 
 function App() {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ duration: 0.5, when: "beforeChildren" }}
-			viewport={{ once: true }}
-			className="flex flex-col bg-neutral-300 font-montserrat min-h-[100dvh] relative"
-		>
+		<div className="flex flex-col bg-neutral-300 font-montserrat min-h-[100dvh] relative">
 			<Header />
 			<div className="main flex justify-center flex-grow">
 				<Routes>
@@ -26,7 +19,7 @@ function App() {
 				</Routes>
 			</div>
 			<Footer />
-		</motion.div>
+		</div>
 	);
 }
 
