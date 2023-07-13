@@ -9,7 +9,7 @@ export default function Local() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}
-					className="text-6xl font-bold"
+					className="text-5xl sm:text-6xl font-bold"
 				>
 					Como chegar
 				</motion.h2>

@@ -7,16 +7,16 @@ export default function Orders() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}
-					className="text-6xl font-bold self-start"
+					className="text-5xl sm:text-6xl font-bold self-start"
 				>
 					Encomendas
 				</motion.h2>
-				<div className="flex flex-col w-full gap-10 flex-grow ">
+				<div className="flex flex-col w-full gap-10 items-center">
 					{/* <p>
 						Nos links abaixo você consegue encontrar cardápios e os contatos
 						para encomendas
 					</p> */}
-					<div className="flex flex-col gap-5 items-center ">
+					<div className="flex flex-col gap-5 items-center w-full px-5">
 						<a
 							href="https://delivery.yooga.app/charlotte-cake-shop"
 							target="_blank"
