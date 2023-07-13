@@ -22,7 +22,7 @@ export default function Product({ product, index }: Props) {
 			>
 				<img
 					// src={`https://production-darez-api.s3.amazonaws.com/products/1599053284028_IMAGE1599053283566.jpg`}
-					src={`/src/assets/${product.id}.jpg`}
+					src={`/images/${product.id}.jpg`}
 					className="w-full h-60 object-cover rounded"
 				/>
 				<span>{product.name}</span>

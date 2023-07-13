@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 // import useWindowSize from "../hooks/useWindowSize";
 import { products } from "../data/products";
 import Product from "../components/Product";
