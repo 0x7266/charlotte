@@ -3,29 +3,31 @@ import Map from "../components/Map";
 
 export default function Local() {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ duration: 1, staggerChildren: 3 }}
-			className="flex flex-col items-center sm:items-start gap-5 py-2 px-5 w-full"
-		>
-			<h2 className="text-5xl font-bold">Como chegar</h2>
-			<div className="flex flex-col sm:flex-row gap-10 justify-center ">
-				<motion.div
+		<div className="container flex flex-col items-center">
+			<div className="flex flex-col sm:items-start gap-10 py-2 px-5 sm:overflow-hidden md:w-11/12 ">
+				<motion.h2
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}
-					className=""
+					className="text-6xl font-bold"
 				>
-					<Map />
-				</motion.div>
-				<div className="flex flex-col gap-10 flex-1 items-center">
+					Como chegar
+				</motion.h2>
+				<div className="flex flex-col gap-10 justify-center w-full">
 					<p className="text-xl font-semibold w-60">
 						Av. Dr. Nilo Peçanha, 67 Parque Santo Amaro, Campos dos Goytacazes
 						RJ, 28030-035
 					</p>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 1 }}
+						className=""
+					>
+						<Map />
+					</motion.div>
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 }
