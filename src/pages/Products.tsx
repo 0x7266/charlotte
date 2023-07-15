@@ -15,15 +15,15 @@ export default function Products() {
 
 	return (
 		<div className="container flex flex-col items-center">
-			<div className="flex flex-col sm:items-start gap-10 py-2 px-5 sm:overflow-hidden md:w-11/12">
-				<motion.h2
+			<div className="flex flex-col justify-center h-full sm:items-start gap-10 py-2 px-5 sm:overflow-hidden md:w-11/12">
+				{/* <motion.h2
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}
 					className="text-5xl sm:text-6xl font-bold text-center"
 				>
 					Produtos
-				</motion.h2>
+				</motion.h2> */}
 				<motion.div
 					// drag="x"
 					// dragConstraints={{ right: 0, left: -width }}

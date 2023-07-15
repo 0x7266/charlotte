@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 export default function Orders() {
 	return (
 		<div className="container flex flex-col items-center">
-			<div className="flex flex-col gap-10 py-2 px-5 w-full m:items-start md:w-11/12 bg-orange-300">
-				<motion.h2
+			<div className="flex flex-col justify-center gap-10 py-2 px-5 w-full m:items-start md:w-11/12 h-full">
+				{/* <motion.h2
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}
 					className="text-5xl sm:text-6xl font-bold text-center"
 				>
 					Encomendas
-				</motion.h2>
+				</motion.h2> */}
 				<div className="flex flex-col w-full gap-10 items-center">
 					{/* <p>
 						Nos links abaixo você consegue encontrar cardápios e os contatos
