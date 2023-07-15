@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useRef } from "react";
 // import useWindowSize from "../hooks/useWindowSize";
 import { products } from "../data/products";
@@ -24,10 +23,9 @@ export default function Products() {
 				>
 					Produtos
 				</motion.h2> */}
-				<motion.div
-					// drag="x"
-					// dragConstraints={{ right: 0, left: -width }}
-					className=""
+				<div
+				// drag="x"
+				// dragConstraints={{ right: 0, left: -width }}
 				>
 					<div
 						ref={carousel}
@@ -37,7 +35,7 @@ export default function Products() {
 							<Product key={index} product={product} index={index} />
 						))}
 					</div>
-				</motion.div>
+				</div>
 			</div>
 		</div>
 	);

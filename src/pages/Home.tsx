@@ -20,13 +20,13 @@ export default function Home() {
 				>
 					<motion.div
 						variants={charlotteVariant}
-						className="text-6xl sm:text-8xl font-semibold"
+						className="text-6xl sm:text-9xl font-semibold"
 					>
 						Charlotte
 					</motion.div>
 					<motion.div
 						variants={charlotteVariant}
-						className="flex justify-center gap-5"
+						className="flex justify-center gap-5 sm:text-2xl"
 					>
 						<div>c a k e </div> <div> s h o p</div>
 					</motion.div>
