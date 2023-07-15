@@ -17,7 +17,7 @@ export default function Product({ product, index }: Props) {
 			viewport={{ once: true, amount: 0.4 }}
 		>
 			<motion.div
-				className="flex flex-col gap-3 w-64 bg-gradient-to-tr from-chrltt from-80% to-rose-500 p-3 rounded text-xl max-h-96 font-bold"
+				className="flex flex-col gap-3 w-64 bg-gradient-to-tr from-chrltt from-80% to-rose-500 p-3 rounded-md text-xl max-h-96 font-bold"
 				variants={productVariant(index)}
 			>
 				<img

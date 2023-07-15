@@ -34,7 +34,7 @@ export default function Header() {
 									transition={{ duration: 0.2 }}
 									layoutId="active"
 									className="absolute inset-0 bg-white"
-									style={{ borderRadius: 9999999 }}
+									style={{ borderRadius: 6 }}
 								/>
 							) : null}
 							<span className="relative z-20 ">{page[0]}</span>
