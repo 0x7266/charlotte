@@ -5,8 +5,6 @@ export default function Home() {
 	return (
 		<div className="flex justify-center items-center relative">
 			<motion.div
-				// exit="exit"
-				transition={{ staggerChildren: 1 }}
 				drag={true}
 				dragConstraints={{
 					top: 20,
@@ -17,11 +15,10 @@ export default function Home() {
 				dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
 			>
 				<motion.div
-					// variants={charlotteVariant}
 					initial="hidden"
 					animate="visible_title"
 					variants={homeVariant}
-					exit="exit_title"
+					exit="exit"
 					className="text-6xl sm:text-9xl font-semibold"
 				>
 					Charlotte
@@ -29,8 +26,7 @@ export default function Home() {
 				<motion.div
 					initial="hidden"
 					animate="visible_subtitle"
-					// variants={charlotteVariant}
-					exit="exit_subtitle"
+					exit="exit"
 					variants={homeVariant}
 					className="flex justify-center gap-5 sm:text-2xl"
 				>

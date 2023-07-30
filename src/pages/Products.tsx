@@ -1,11 +1,11 @@
-import { useRef } from "react";
+// import { useRef } from "react";
 // import useWindowSize from "../hooks/useWindowSize";
 import { products } from "../data/products";
 import Product from "../components/Product";
 
 export default function Products() {
 	// const [width, setWidth] = useState(null);
-	const carousel = useRef<HTMLDivElement | null>(null);
+	// const carousel = useRef<HTMLDivElement | null>(null);
 	// const size = useWindowSize();
 
 	// useEffect(() => {
@@ -28,7 +28,7 @@ export default function Products() {
 				// dragConstraints={{ right: 0, left: -width }}
 				>
 					<div
-						ref={carousel}
+						// ref={carousel}
 						className="flex flex-col items-center sm:items-stretch sm:flex-row gap-3"
 					>
 						{products.map((product, index) => (

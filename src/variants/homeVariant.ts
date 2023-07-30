@@ -14,13 +14,12 @@ export const homeVariant = {
 			delay: 0.3,
 		},
 	},
-	exit_title: {
+	exit: {
+		y: 80,
 		opacity: 0,
 		transition: {
-			delay: 0.15,
+			y: { duration: 0.2 },
+			opacity: { duration: 0.1 },
 		},
-	},
-	exit_subtitle: {
-		opacity: 0,
 	},
 };
