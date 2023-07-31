@@ -7,13 +7,12 @@ export const productVariants = {
 		transition: {
 			delay: index * 0.15,
 			delayChildren: index * 0.2,
-			// staggerChildren: 0.1,
 		},
 	}),
 	exit: (index: number) => ({
 		opacity: 0,
 		transition: {
-			delay: index * 2,
+			delay: index * 0.1,
 			staggerDirection: -1,
 		},
 	}),
