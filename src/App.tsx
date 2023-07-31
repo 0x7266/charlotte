@@ -10,7 +10,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
 	const location = useLocation();
 	return (
-		<div className="flex flex-col gap-10 items-center bg-neutral-300 font-montserrat min-h-[100dvh] relative overflow-x-hidden">
+		<div className="flex flex-col gap-10 items-center bg-neutral-300 font-montserrat min-h-[100dvh] relative overflow-x-hidden md:overflow-y-hidden">
 			<Header />
 			<div className="main flex justify-center flex-grow container">
 				<AnimatePresence mode="wait">
