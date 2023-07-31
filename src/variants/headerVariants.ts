@@ -9,7 +9,7 @@ export const containerVariants: Variants = {
 		transition: {
 			type: "spring",
 			bounce: 0,
-			duration: 0.4,
+			duration: 0.2,
 			when: "beforeChildren",
 			staggerChildren: 0.1,
 		},
@@ -25,7 +25,7 @@ export const elementVariants: Variants = {
 		transition: {
 			type: "spring",
 			bounce: 0.2,
-			duration: 0.4,
+			duration: 0.2,
 			when: "beforeChildren",
 			staggerChildren: 0.1,
 		},
