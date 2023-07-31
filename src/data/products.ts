@@ -38,6 +38,46 @@ export const products = [
 			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
 		price: 12,
 	},
+	{
+		id: 6,
+		name: "torta no pote de abacaxi com limão",
+		flavors: ["abacaxi", "limão"],
+		description:
+			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
+		price: 12,
+	},
+	{
+		id: 7,
+		name: "torta no pote de abacaxi com limão",
+		flavors: ["abacaxi", "limão"],
+		description:
+			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
+		price: 12,
+	},
+	{
+		id: 8,
+		name: "torta no pote de abacaxi com limão",
+		flavors: ["abacaxi", "limão"],
+		description:
+			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
+		price: 12,
+	},
+	{
+		id: 9,
+		name: "torta no pote de abacaxi com limão",
+		flavors: ["abacaxi", "limão"],
+		description:
+			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
+		price: 12,
+	},
+	{
+		id: 10,
+		name: "torta no pote de abacaxi com limão",
+		flavors: ["abacaxi", "limão"],
+		description:
+			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
+		price: 12,
+	},
 ];
 
 export interface IProduct {

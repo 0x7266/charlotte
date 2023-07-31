@@ -19,7 +19,7 @@ export default function Header() {
 			initial={{ y: -100 }}
 			animate={{ y: 0 }}
 			transition={{ type: "spring", bounce: 0 }}
-			className="bg-chrltt flex flex-col justify-center items-center py-1 px-2 sm:px-10 pt-0 h-fit w-full"
+			className="bg-chrltt flex flex-col justify-center items-center py-3 sm:py-1 px-2 sm:px-10 pt-0 h-fit w-full overflow-hidden"
 		>
 			<motion.div
 				variants={containerVariants}
@@ -27,7 +27,7 @@ export default function Header() {
 				animate="animate"
 				className="container flex flex-col sm:flex-row justify-around items-center"
 			>
-				<motion.div variants={elementVariants}>
+				<motion.div variants={elementVariants} onClick={() => setActive("/")}>
 					<Link to="/" className="focus:outline-red-400">
 						<img className="w-20" src={logo} />
 					</Link>

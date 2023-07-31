@@ -24,6 +24,7 @@ export default function Product({ product, index }: Props) {
 				whileInView="animate"
 				exit="exit"
 				custom={index}
+				viewport={{ once: true }}
 			>
 				<motion.img
 					variants={productImageVariants}
