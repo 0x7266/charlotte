@@ -60,7 +60,12 @@ export default function Header() {
 	};
 
 	return (
-		<header className="bg-chrltt flex flex-col justify-center items-center py-1 px-2 sm:px-10 pt-0 h-fit w-full">
+		<motion.header
+			initial={{ y: -100 }}
+			animate={{ y: 0 }}
+			transition={{ type: "spring", bounce: 0 }}
+			className="bg-chrltt flex flex-col justify-center items-center py-1 px-2 sm:px-10 pt-0 h-fit w-full"
+		>
 			<motion.div
 				variants={containerVariants}
 				initial="initial"
@@ -100,6 +105,6 @@ export default function Header() {
 					))}
 				</motion.nav>
 			</motion.div>
-		</header>
+		</motion.header>
 	);
 }
