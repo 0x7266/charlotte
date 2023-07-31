@@ -1,4 +1,4 @@
-export const homeVariant = {
+export const homeVariants = {
 	hidden: {
 		y: 80,
 		opacity: 0,

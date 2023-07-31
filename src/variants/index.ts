@@ -1,2 +1,3 @@
-export * from "./homeVariant";
-export * from "./productVariant";
+export * from "./headerVariants";
+export * from "./homeVariants";
+export * from "./productVariants";

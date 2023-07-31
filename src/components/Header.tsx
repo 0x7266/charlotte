@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import logo from "/images/logo.png";
 import { useState } from "react";
+import { containerVariants, elementVariants, linkVariants } from "../variants";
 
 export default function Header() {
 	const location = useLocation();
@@ -12,52 +13,6 @@ export default function Header() {
 		["Encomendas", "encomendas"],
 		["Localização", "localizacao"],
 	];
-
-	const containerVariants: Variants = {
-		initial: {
-			y: -100,
-		},
-		animate: {
-			y: 0,
-			transition: {
-				type: "spring",
-				bounce: 0,
-				duration: 0.4,
-				when: "beforeChildren",
-				staggerChildren: 0.1,
-			},
-		},
-	};
-
-	const elementVariants: Variants = {
-		initial: {
-			y: -100,
-		},
-		animate: {
-			y: 0,
-			transition: {
-				type: "spring",
-				bounce: 0.3,
-				duration: 0.4,
-				when: "beforeChildren",
-				staggerChildren: 0.1,
-			},
-		},
-	};
-
-	const linkVariants: Variants = {
-		initial: {
-			y: -100,
-		},
-		animate: {
-			y: 0,
-			transition: {
-				type: "spring",
-				bounce: 0.3,
-				duration: 0.4,
-			},
-		},
-	};
 
 	return (
 		<motion.header

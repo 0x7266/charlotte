@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { homeVariant } from "../variants";
+import { homeVariants } from "../variants";
 
 export default function Home() {
 	return (
@@ -17,7 +17,7 @@ export default function Home() {
 				<motion.div
 					initial="hidden"
 					animate="visible_title"
-					variants={homeVariant}
+					variants={homeVariants}
 					exit="exit"
 					className="text-6xl sm:text-9xl font-semibold"
 				>
@@ -27,7 +27,7 @@ export default function Home() {
 					initial="hidden"
 					animate="visible_subtitle"
 					exit="exit"
-					variants={homeVariant}
+					variants={homeVariants}
 					className="flex justify-center gap-5 sm:text-2xl"
 				>
 					<div>c a k e </div> <div> s h o p</div>
