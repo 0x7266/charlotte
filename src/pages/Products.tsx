@@ -10,9 +10,9 @@ export default function Products() {
 	const carousel = useRef<HTMLDivElement | null>(null);
 	const size = useWindowSize();
 
-	// useEffect(() => {
-	// 	setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-	// }, [size]);
+	useEffect(() => {
+		setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+	}, [size]);
 
 	return (
 		<div className="container flex flex-col items-center">

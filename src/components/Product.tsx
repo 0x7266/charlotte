@@ -20,7 +20,7 @@ export default function Product({ product }: Props) {
 			<motion.img
 				variants={productImageVariants}
 				src={`/images/${product.id}.jpg`}
-				className="w-full h-60 object-cover rounded"
+				className="w-full h-60 object-cover rounded pointer-events-none"
 			/>
 			<motion.span variants={productNameVariants}>{product.name}</motion.span>
 		</motion.div>
