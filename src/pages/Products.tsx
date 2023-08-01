@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { productsContainerVariants } from "../variants";
 import { products } from "../data/products";
 import Product from "../components/Product";
+import { motion } from "framer-motion";
+import { productsContainerVariants } from "../variants";
 
 export default function Products() {
 	return (
@@ -11,7 +11,7 @@ export default function Products() {
 				initial="initial"
 				animate="animate"
 				exit="exit"
-				className="flex flex-col flex-wrap items-center sm:items-stretch sm:flex-row gap-3"
+				className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3"
 			>
 				{products.map((product, index) => (
 					<Product key={index} product={product} />
