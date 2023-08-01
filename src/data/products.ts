@@ -40,43 +40,68 @@ export const products = [
 	},
 	{
 		id: 6,
-		name: "torta no pote de abacaxi com limão",
-		flavors: ["abacaxi", "limão"],
+		name: "trio de waffers",
+		flavors: [
+			"nutella",
+			"chocolate meio amargo",
+			"chocolate ao leite",
+			"chocolate branco",
+		],
 		description:
-			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
-		price: 12,
+			"caixinha com 3 barrinhas de waffer com nutella, cobertos com chocolate meio amargo, ao leite e branco",
+		price: 27,
 	},
 	{
 		id: 7,
-		name: "torta no pote de abacaxi com limão",
-		flavors: ["abacaxi", "limão"],
-		description:
-			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
-		price: 12,
+		name: "dose extra - ninho com chocolate (180 ml)",
+		flavors: ["ninho", "chocolate"],
+		description: "",
+		price: 20,
 	},
 	{
 		id: 8,
-		name: "torta no pote de abacaxi com limão",
-		flavors: ["abacaxi", "limão"],
-		description:
-			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
-		price: 12,
+		name: "dose extra - mousse de ninho (180 ml)",
+		flavors: ["ninho"],
+		description: "",
+		price: 20,
 	},
 	{
 		id: 9,
-		name: "torta no pote de abacaxi com limão",
-		flavors: ["abacaxi", "limão"],
-		description:
-			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
-		price: 12,
+		name: "dose extra - meio amargo belga (180 ml)",
+		flavors: ["chocolate meio amargo"],
+		description: "",
+		price: 21,
 	},
 	{
 		id: 10,
-		name: "torta no pote de abacaxi com limão",
-		flavors: ["abacaxi", "limão"],
+		name: "dose extra - doce de leite charlotte (180 ml)",
+		flavors: ["doce de leite"],
+		description: "",
+		price: 20,
+	},
+	{
+		id: 11,
+		name: "biscoitinho charlotte coberto com chocolate ao leite (180 g)",
+		flavors: ["chocolate ao leite"],
 		description:
-			"Torta no pote de creme de chocolate meio amargo, creme de chocolate ao leite, mousse de chocolate que são intercalados com massa molhadinha de cacau 50%.",
-		price: 12,
+			"biscoitinhos crocantes cobertos com chocolate ao leite. viciante e perfeito para comer vendo um filme",
+		price: 27,
+	},
+	{
+		id: 12,
+		name: "biscoitinho charlotte coberto com chocolate branco (180 g)",
+		flavors: ["chocolate branco"],
+		description:
+			"biscoitinhos crocantes cobertos com chocolate branco. viciante e perfeito para comer vendo um filme",
+		price: 27,
+	},
+	{
+		id: 13,
+		name: "biscoitinho amanteigado recheado com goiabada (155 g)",
+		flavors: ["goiabada"],
+		description:
+			"biscoitinhos crocantes cobertos com chocolate branco. viciante e perfeito para comer vendo um filme",
+		price: 18,
 	},
 ];
 
