@@ -25,7 +25,7 @@ export default function Header() {
 				variants={containerVariants}
 				initial="initial"
 				animate="animate"
-				className="container flex flex-col sm:flex-row justify-around items-center"
+				className="container flex flex-col gap-5 sm:gap-0 sm:flex-row justify-around items-center"
 			>
 				<motion.div variants={elementVariants} onClick={() => setActive("/")}>
 					<Link to="/" className="focus:outline-red-400">
@@ -36,8 +36,8 @@ export default function Header() {
 					variants={elementVariants}
 					className="flex w-full justify-between items-center sm:w-fit sm:gap-10 font-bold text-[#2ACFC8]"
 				>
-					{pages.map((page) => (
-						<motion.div variants={linkVariants}>
+					{pages.map((page, index) => (
+						<motion.div variants={linkVariants} key={index}>
 							<Link
 								to={page[1]}
 								key={page[1]}
