@@ -13,7 +13,7 @@ interface Props {
 export default function Product({ product }: Props) {
 	return (
 		<motion.div
-			className="flex flex-col gap-3 w-64 bg-gradient-to-tr from-chrltt from-80% to-rose-500 p-3 rounded-md text-xl max-h-96 font-bold overflow-hidden"
+			className="flex flex-col gap-3 w-64 bg-gradient-to-tr from-chrltt from-80% to-rose-500 p-3 rounded-md text-xl h-96 font-bold overflow-hidden"
 			variants={productVariants}
 			viewport={{ once: true }}
 		>

@@ -12,7 +12,7 @@ function App() {
 	return (
 		<div className="flex flex-col gap-10 items-center bg-neutral-300 font-montserrat min-h-[100dvh] relative overflow-x-hidden md:overflow-y-hidden">
 			<Header />
-			<div className="main flex justify-center flex-grow container">
+			<div className="main flex justify-center flex-grow container relative">
 				<AnimatePresence mode="wait">
 					<Routes key={location.pathname} location={location}>
 						<Route path="/" element={<Home />} />
