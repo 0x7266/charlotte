@@ -10,9 +10,9 @@ import { AnimatePresence } from "framer-motion";
 function App() {
 	const location = useLocation();
 	return (
-		<div className="flex flex-col gap-10 items-center bg-neutral-300 font-montserrat min-h-[100dvh] relative overflow-x-hidden md:overflow-y-hidden">
+		<div className="flex flex-col gap-5 md:gap-0 items-center bg-neutral-300 font-montserrat min-h-[100dvh] h-full relative overflow-x-hidden md:overflow-y-hidden">
 			<Header />
-			<div className="main flex justify-center flex-grow container relative">
+			<div className="main flex flex-col justify-center grow container relative h-full">
 				<AnimatePresence mode="wait">
 					<Routes key={location.pathname} location={location}>
 						<Route path="/" element={<Home />} />

@@ -27,7 +27,8 @@ export const productVariants: Variants = {
 	animate: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 0.1,
+			delayChildren: 0.1,
+			staggerChildren: 0.2,
 		},
 	},
 	exit: {
@@ -40,17 +41,17 @@ export const productVariants: Variants = {
 };
 
 export const productImageVariants: Variants = {
-	initial: { y: -300 },
-	animate: { y: 0, transition: { type: "spring", bounce: 0.2 } },
+	initial: { opacity: 0 },
+	animate: { opacity: 1 },
 	exit: {
-		y: -300,
+		opacity: 0,
 	},
 };
 
 export const productNameVariants: Variants = {
-	initial: { y: 100 },
-	animate: { y: 0, transition: { type: "spring", bounce: 0.2 } },
+	initial: { opacity: 0 },
+	animate: { opacity: 1 },
 	exit: {
-		y: 100,
+		opacity: 0,
 	},
 };
