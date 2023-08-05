@@ -15,6 +15,8 @@ export default function Product({ product }: Props) {
 		<motion.div
 			className="flex gap-3 md:w-2/3 bg-gradient-to-tr from-chrltt from-80% to-rose-500 p-3 rounded-md text-sm md:text-xl min-h-[300px]"
 			variants={productVariants}
+			initial="initial"
+			whileInView="animate"
 			viewport={{ once: true }}
 		>
 			<motion.img

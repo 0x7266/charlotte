@@ -7,13 +7,13 @@ export const productsContainerVariants: Variants = {
 	animate: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 0.04,
+			staggerChildren: 2,
 		},
 	},
 	exit: {
 		opacity: 0,
 		transition: {
-			staggerChildren: 0.03,
+			staggerChildren: 0.008,
 			staggerDirection: -1,
 			when: "afterChildren",
 		},

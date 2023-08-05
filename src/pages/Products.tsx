@@ -8,8 +8,8 @@ export default function Products() {
 		<div className="flex flex-col items-center justify-center h-full w-full text-white">
 			<motion.div
 				variants={productsContainerVariants}
-				initial="initial"
-				animate="animate"
+				// initial="initial"
+				// animate="animate"
 				exit="exit"
 				className="w-full h-full max-h-[calc(100vh-300px)] md:max-h-[calc(100vh-200px)] flex flex-col items-center gap-3 overflow-y-auto px-4 md:p-0"
 			>
