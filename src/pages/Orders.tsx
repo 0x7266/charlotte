@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { containerVariants, linkVariants } from "../variants/orderVariants";
+import { ordersContainerVariants, ordersLinkVariants } from "../variants";
 
 const links = [
 	{ url: "https://delivery.yooga.app/charlotte-cake-shop", label: "Delivery" },
@@ -18,7 +18,7 @@ export default function Orders() {
 		<div className="container flex flex-col items-center">
 			<div className="flex flex-col justify-center gap-10 py-2 px-5 w-full m:items-start md:w-11/12 h-full">
 				<motion.div
-					variants={containerVariants}
+					variants={ordersContainerVariants}
 					initial="initial"
 					animate="animate"
 					exit="exit"
@@ -43,7 +43,7 @@ type ButtonProps = {
 function Button({ link }: ButtonProps) {
 	return (
 		<motion.a
-			variants={linkVariants}
+			variants={ordersLinkVariants}
 			href={link.url}
 			target="_blank"
 			className="font-bold bg-white text-center rounded-md px-3 py-5 shadow-[5px_9px_0_rgba(255,70,69,255)] hover:translate-x-[5px] hover:translate-y-[9px] text-black ease-out transition-all hover:shadow-none duration-200 w-full sm:w-4/5 max-w-2xl"

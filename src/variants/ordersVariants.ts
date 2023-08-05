@@ -1,11 +1,7 @@
 import { Variants } from "framer-motion";
 
-export const containerVariants: Variants = {
-	// hidden: {
-	// 	opacity: 0,
-	// },
+export const ordersContainerVariants: Variants = {
 	animate: {
-		// opacity: 1,
 		transition: {
 			staggerChildren: 0.1,
 		},
@@ -18,7 +14,7 @@ export const containerVariants: Variants = {
 	},
 };
 
-export const linkVariants: Variants = {
+export const ordersLinkVariants: Variants = {
 	initial: {
 		opacity: 0,
 	},
